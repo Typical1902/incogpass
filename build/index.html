@@ -92,7 +92,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       <h1>Password protected</h1>
       <form method="post" action="{{ url_for('login') }}">
           <input type="hidden" name="next" value="{{ redir or request.headers.get('X-Original-URI') }}" />
-          <input type="password" placeholder="Password" name="password"/>
+          <input type="admin" placeholder="Password" name="password"/>
           <button type="submit">Go !</button>
       </form>
     </div>
