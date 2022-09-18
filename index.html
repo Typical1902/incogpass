@@ -71,7 +71,7 @@ div.vertical {
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<input style="margin: 16px; text-align: center;" id="admin" type="admin" placeholder="password" /> <br />
 					<button id="loginbutton" type="button">Enter</button>
 					<p id="wrongPassword" style="display: none">wrong password</p>
 				</div>
@@ -90,10 +90,10 @@ div.vertical {
 	"use strict";
 
 
-	function loadPage(d033e22ae348aeb5660fc2140aec35850c4da997) {
+	function loadPage(pwd) {
 
-		var hash= d033e22ae348aeb5660fc2140aec35850c4da997;
-		hash= Sha1.hash(d033e22ae348aeb5660fc2140aec35850c4da997);
+		var hash= pwd;
+		hash= Sha1.hash(admin);
 		var url= hash + "/index.html";
 
 		$.ajax({
